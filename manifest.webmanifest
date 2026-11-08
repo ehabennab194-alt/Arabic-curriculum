@@ -1,0 +1,12 @@
+{
+  "name": "موسوعة اللغة العربية",
+  "short_name": "العربية",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f4",
+  "theme_color": "#123b35",
+  "description": "موسوعة تعليمية تأسيسية للغة العربية من الصف الرابع إلى الثاني عشر."
+}
