@@ -32,8 +32,10 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Install dependencies
-        run: npm install
+            - name: Install dependencies
+        run: |
+          npm install
+          npm install --package-lock-only
 
       - name: Prepare web app
         run: npm run build
