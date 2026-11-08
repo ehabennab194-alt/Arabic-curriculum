@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#123b35"><title>موسوعة العربية الأردنية</title>
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{--green:#123b35;--green2:#1d6557;--mint:#e6f2ed;--gold:#d5a84b;--ink:#1e2d29;--muted:#718079;--paper:#f5f7f4;--white:#fff;--line:#e4eae5}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.75}
+header{background:linear-gradient(135deg,#0f302c,#1d6557);color:white;padding:22px 18px 26px;border-radius:0 0 26px 26px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:11px}.logo{width:45px;height:45px;border-radius:14px;background:#ffffff1c;display:grid;place-items:center;font-size:25px}.brand h1{font-size:18px;margin:0}.brand small{opacity:.78}.tag{border:1px solid #ffffff55;padding:4px 9px;border-radius:30px;font-size:11px}
+header p{margin:18px 0 0;color:#e0eee8;font-size:14px}.wrap{max-width:760px;margin:auto;padding:16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:-2px}.stat{background:white;border:1px solid var(--line);border-radius:15px;padding:12px;text-align:center;box-shadow:0 4px 14px #163b3210}.stat b{display:block;color:var(--green);font-size:19px}.stat span{font-size:11px;color:var(--muted)}
+.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:15px;margin:15px 0;box-shadow:0 5px 18px #163b3208}
+h2{font-size:17px;margin:0 0 12px;color:var(--green)}h3{font-size:15px;margin:0 0 7px}
+label{display:block;font-size:12px;color:var(--muted);margin:7px 0 4px}
+select,input{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:#fbfcfb;font:inherit;color:var(--ink);outline:none}
+.controls{display:grid;grid-template-columns:1fr 1fr;gap:10px}.chips{display:flex;gap:7px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:white;color:var(--green);border-radius:22px;padding:7px 12px;font:inherit;font-size:12px}.chip.active{background:var(--green);color:white;border-color:var(--green)}
+.lesson{border:1px solid var(--line);border-radius:14px;padding:13px;margin:9px 0;background:#fff;cursor:pointer}.lesson:active{transform:scale(.995)}.lesson .meta{font-size:11px;color:var(--muted)}.lesson strong{display:block;color:var(--green);margin:3px 0}.lesson p{font-size:12px;color:#65736d;margin:0}.pill{display:inline-block;border-radius:20px;background:var(--mint);color:var(--green2);font-size:10px;padding:2px 8px}
+button{cursor:pointer}.primary{background:var(--green);color:#fff;border:0;border-radius:12px;padding:12px 16px;font:inherit;font-weight:bold;width:100%}.secondary{background:var(--mint);color:var(--green);border:0;border-radius:11px;padding:9px 12px;font:inherit}
+.detail{display:none}.detail.show{display:block}.hide{display:none!important}.back{background:none;border:0;color:var(--green);font:inherit;font-weight:bold;padding:0 0 10px}
+.content h3{margin-top:16px;color:var(--green2)}.content p,.content li{font-size:14px}.example{background:#f0f6f2;border-right:4px solid var(--gold);padding:11px;border-radius:9px;margin:10px 0}.note{background:#fff8e9;border:1px solid #f0dfb8;border-radius:12px;padding:11px;font-size:12px;color:#6a5428}
+.quizq{padding:12px;border:1px solid var(--line);border-radius:12px;margin:10px 0}.option{display:block;width:100%;text-align:right;padding:10px;margin:6px 0;border:1px solid var(--line);border-radius:10px;background:white;font:inherit;font-size:13px}.option.selected{border-color:var(--green2);background:var(--mint)}.correct{color:#177245}.wrong{color:#b33}
+footer{text-align:center;color:var(--muted);font-size:11px;padding:20px}
+nav{position:sticky;bottom:0;background:#ffffffed;border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:9px max(8px,env(safe-area-inset-right)) calc(9px + env(safe-area-inset-bottom));backdrop-filter:blur(12px)}
+nav button{background:none;border:0;color:var(--muted);font:inherit;font-size:11px}nav button b{display:block;font-size:19px;font-weight:400}nav button.active{color:var(--green)}
+a{color:var(--green2)}
+@media(min-width:600px){.controls{grid-template-columns:repeat(3,1fr)}}
+</style></head>
+<body>
+<header><div class="top"><div class="brand"><div class="logo">أ</div><div><h1>موسوعة العربية الأردنية</h1><small>من الصف الرابع إلى الثاني عشر</small></div></div><span class="tag">نسخة تأسيسية 1.0</span></div><p>تعلم اللغة العربية خطوة بخطوة: شرح، أمثلة، إعراب، تدريبات واختبارات.</p></header>
+<main class="wrap">
+<section id="home">
+<div class="stats"><div class="stat"><b>9</b><span>صفوف دراسية</span></div><div class="stat"><b>2</b><span>فصلان دراسيان</span></div><div class="stat"><b id="doneCount">0</b><span>دروس مكتملة</span></div></div>
+<div class="panel"><h2>اختر صفك الدراسي</h2><div class="controls">
+<div><label>الصف</label><select id="grade"></select></div>
+<div><label>الفصل الدراسي</label><select id="semester"><option value="1">الفصل الأول</option><option value="2">الفصل الثاني</option></select></div>
+<div id="trackWrap"><label>المسار</label><select id="track"><option value="academic">المسار الأكاديمي</option><option value="vocational">المسار المهني</option></select></div>
+</div></div>
+<div class="panel"><h2>ابحث في الدروس</h2><input id="search" placeholder="مثال: المبتدأ والخبر، التمييز، الهمزة..."></div>
+<div class="panel"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0">الدروس المتاحة</h2><span class="pill" id="lessonCount">0 درس</span></div><div id="lessonList"></div></div>
+<div class="panel"><h2>المصادر الرسمية الأردنية</h2><p style="font-size:13px">راجع كتاب الطالب وكتاب التمارين وأدلة المعلم من المركز الوطني لتطوير المناهج.</p><a href="https://nccd.gov.jo/Ar/Pages/textbooks" target="_blank" rel="noopener">فتح مكتبة الكتب المدرسية الرسمية ↗</a><p style="font-size:11px;color:#718079">تُستخدم الكتب الرسمية للتحقق من ترتيب الوحدات والدروس والطبعات؛ لا يحتوي هذا الإصدار على نسخ كاملة من الكتب المحمية.</p></div>
+</section>
+<section id="detail" class="detail"><button class="back" id="back">← العودة إلى قائمة الدروس</button><div class="panel"><span class="pill" id="dMeta"></span><h2 id="dTitle" style="margin-top:9px"></h2><div class="content" id="dContent"></div><div class="note" id="sourceNote">ملاحظة: هذا شرح تعليمي أصلي للمفهوم، ويجب مطابقة عنوان الدرس وترتيبه مع طبعة كتاب الطالب الرسمية للعام الدراسي.</div><button class="primary" id="completeBtn" style="margin-top:14px">✓ علّم الدرس بأنه مكتمل</button></div><div class="panel"><h2>اختبر فهمك</h2><div id="quiz"></div><button class="secondary" id="checkQuiz">تصحيح الإجابات</button><p id="quizResult" aria-live="polite"></p></div></section>
+<section id="about" class="hide"><div class="panel"><h2>عن الموسوعة</h2><p>تطبيق تعليمي عربي يعمل محلياً على الهاتف. يضم هيكلاً للصفوف من الرابع إلى الثاني عشر، ويدعم المسارين الأكاديمي والمهني للصفين الحادي عشر والثاني عشر.</p><p>هذه النسخة بداية قابلة للتوسعة، وليست بعدُ تغطية حرفية كاملة لكل درس في الكتب الرسمية. ستُضاف الوحدات والنصوص بعد مراجعة الكتب المعتمدة لكل صف وفصل ومسار.</p><h3>سياسة المحتوى</h3><p>الشروحات والأمثلة والتدريبات في التطبيق صياغة تعليمية أصلية. أسماء الوحدات وترتيبها النهائي يجب التحقق منها مقابل الكتاب الرسمي.</p></div></section>
+</main>
+<nav><button class="active" data-tab="home"><b>⌂</b>الرئيسية</button><button data-tab="about"><b>ⓘ</b>عن التطبيق</button></nav>
+<script src="app.js"></script>
+</body></html>
